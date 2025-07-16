@@ -1,0 +1,72 @@
+<LinearLayout
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_task"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:hint="@string/enter_title"
+        android:autofillHints="@null"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:hint="@string/enter_description"
+        android:autofillHints="@null"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:maxLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/prioritySlider"
+        android:valueFrom="1"
+        android:valueTo="5"
+        android:stepSize="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/addTaskButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

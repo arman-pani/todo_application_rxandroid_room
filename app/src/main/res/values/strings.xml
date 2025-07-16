@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Todo Application</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_description">Enter description</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="add_task">Add Task</string>
+</resources>
